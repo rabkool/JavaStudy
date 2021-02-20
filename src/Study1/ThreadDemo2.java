@@ -2,8 +2,10 @@ package Study1;
 
 /**
  * Runnableインターフェースを実装
+ *
+ * @author RabKool
  */
-public class Thread2 implements Runnable {
+public class ThreadDemo2 implements Runnable {
     /**
      * 変数
      */
@@ -26,7 +28,7 @@ public class Thread2 implements Runnable {
 
     public static void main(String[] args) {
         // インスタンスを作成
-        Thread2 myThread = new Thread2();
+        ThreadDemo2 myThread = new ThreadDemo2();
         // メソッドを使用
         myThread.setData("kool");
 

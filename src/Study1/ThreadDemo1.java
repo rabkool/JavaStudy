@@ -2,8 +2,10 @@ package Study1;
 
 /**
  * Threadクラスを継承する
+ *
+ * @author RabKool
  */
-class Thread1 extends Thread {
+class ThreadDemo1 extends Thread {
     /**
      * クラスでしかアクセスできない定数
      */
@@ -12,7 +14,7 @@ class Thread1 extends Thread {
     /**
      * サブクラス
      */
-    public Thread1(String data) {
+    public ThreadDemo1(String data) {
         this.data = data;
     }
 
@@ -26,7 +28,7 @@ class Thread1 extends Thread {
 
     public static void main(String[] args) {
         // インスタンスを作成
-        Thread thread = new Thread1("Kool");
+        Thread thread = new ThreadDemo1("Kool");
         // startメソッドを呼び出
         thread.start();
     }

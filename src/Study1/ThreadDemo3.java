@@ -23,8 +23,10 @@ class Method {
 
 /**
  * Threadクラスを継承する
+ *
+ * @author RabKool
  */
-public class Thread3 extends Thread {
+public class ThreadDemo3 extends Thread {
     /**
      * クラスでしかアクセスできない定数
      */
@@ -33,7 +35,7 @@ public class Thread3 extends Thread {
     /**
      * サブクラス
      */
-    public Thread3(Method method) {
+    public ThreadDemo3(Method method) {
         this.method = method;
     }
 
@@ -54,7 +56,7 @@ public class Thread3 extends Thread {
 
     public static void main(String[] args) {
         // インスタンスを作成
-        Thread thread = new Thread3(new Method());
+        Thread thread = new ThreadDemo3(new Method());
         // startメソッドを呼び出
         thread.start();
     }
